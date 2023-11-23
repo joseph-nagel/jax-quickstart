@@ -6,3 +6,5 @@ from .functions import (
     sigmoid_deriv
 )
 
+from .modules import MLP, AutoEncoder
+
