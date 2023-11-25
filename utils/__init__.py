@@ -1,5 +1,7 @@
 '''Utilities.'''
 
+from .data import make_linear_data
+
 from .functions import (
     sigmoid,
     sigmoid_sum,
@@ -7,4 +9,6 @@ from .functions import (
 )
 
 from .modules import MLP, AutoEncoder
+
+from .training import mse
 

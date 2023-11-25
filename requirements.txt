@@ -1,6 +1,7 @@
 numpy
 jax
 flax
+optax
 matplotlib
 notebook
 
