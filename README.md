@@ -15,9 +15,11 @@ it is certainly well-suited for typical tasks involving neural networks.
 One can therefore build dedicated higher-level libraries on top of JAX.
 An example of such a JAX-based library is [Flax](https://flax.readthedocs.io).
 
+
 ## Instructions
 
 The CPU-only version of JAX can be installed via `pip install jax[cpu]`.
+
 
 ## Contents
 
