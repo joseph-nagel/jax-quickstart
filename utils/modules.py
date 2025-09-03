@@ -40,4 +40,3 @@ class AutoEncoder(nn.Module):
 
     def __call__(self, x):
         return self.decode(self.encode(x))
-

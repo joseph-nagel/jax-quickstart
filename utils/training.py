@@ -8,4 +8,3 @@ def mse(preds, targets):
     diffs = targets - preds
     loss = jnp.mean(diffs**2)
     return loss
-

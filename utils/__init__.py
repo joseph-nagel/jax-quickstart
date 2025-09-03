@@ -11,4 +11,3 @@ from .functions import (
 from .modules import MLP, AutoEncoder
 
 from .training import mse
-

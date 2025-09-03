@@ -32,4 +32,3 @@ def make_linear_data(
         y = y_perfect
 
     return x, y
-

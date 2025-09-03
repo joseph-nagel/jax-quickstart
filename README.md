@@ -28,4 +28,3 @@ The CPU-only version of JAX can be installed via `pip install jax[cpu]`.
 - [Flax basics](notebooks/flax_basics.ipynb)
 
 - [Linear regression](notebooks/linear_regression.ipynb)
-

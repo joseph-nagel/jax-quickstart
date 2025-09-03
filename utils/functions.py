@@ -19,4 +19,3 @@ def sigmoid_deriv(x):
     sigma = sigmoid(x)
     deriv = sigma * (1 - sigma)
     return deriv
-
