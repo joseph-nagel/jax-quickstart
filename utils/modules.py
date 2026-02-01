@@ -8,13 +8,13 @@ import flax.linen as nn
 class MLP(nn.Module):
     '''MLP module.'''
 
-    features: Sequence[int] # modules act as dataclasses
+    features: Sequence[int]  # modules act as dataclasses
 
     @nn.compact
     def __call__(self, x):
 
         for idx, features in enumerate(self.features):
-            x = nn.Dense(features, name=f'dense{idx + 1}')(x) # create inline submodules
+            x = nn.Dense(features, name=f'dense{idx + 1}')(x)  # create inline submodules
 
             if idx + 1 < len(self.features):
                 x = nn.relu(x)
@@ -29,7 +29,7 @@ class AutoEncoder(nn.Module):
     dec_features: Sequence[int]
 
     def setup(self):
-        self.encoder = MLP(self.enc_features) # only accessible from inside .init or .apply
+        self.encoder = MLP(self.enc_features)  # only accessible from inside .init or .apply
         self.decoder = MLP(self.dec_features)
 
     def encode(self, x):

@@ -27,7 +27,6 @@ def make_linear_data(
     if noise_level is not None:
         eps = jax.random.normal(key_noise, (num_samples, y_dim))
         y = y_perfect + abs(noise_level) * eps
-
     else:
         y = y_perfect
 
